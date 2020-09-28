@@ -3,6 +3,7 @@ apply plugin: "java-library"
 buildscript{
     repositories {
         jcenter()
+        maven { url 'https://jitpack.io' }
     }
     dependencies{
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.8.4'
@@ -33,6 +34,7 @@ repositories {
 
 dependencies {
     implementation "com.badlogicgames.gdx:gdx-jnigen:1.9.10"
+    implementation 'com.github.LLY13:sdl2gdx:master-SNAPSHOT'
     api "com.badlogicgames.gdx:gdx:1.9.9"
     api "com.badlogicgames.gdx:gdx-controllers:1.9.9"
 }
